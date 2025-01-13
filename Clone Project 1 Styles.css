@@ -1,0 +1,61 @@
+body {
+  background: #f6f2fe;
+}
+
+.main-nav li {
+  float: left;
+  width: 8em;
+  text-align: center;
+  border-right: 1px solid #fff;
+  background-color: black;
+  display: block;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.main-nav a:hover {
+  background-color: orange;
+}
+h1 {
+  text-decoration: none;
+  color: #885df1;
+  text-align: center;
+  display: block;
+}
+
+h2 {
+  color: #272044;
+  font-weight: normal;
+  text-align: center;
+}
+h3 {
+  color: purple;
+  text-align: center;
+}
+
+.splash {
+  background-image: url(https://img.baba-blog.com/2024/01/a-selection-of-clear-glass-perfume-bottles.jpeg?x-oss-process=style%2Ffull);
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: block;
+}
+
+.splash2 {
+  background-image: url(https://www.google.com/maps/place/Carrer+de+Mallorca,+214);
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: block;
+}
+
+.footer {
+  text-decoration: none;
+  color: #885df1;
+  text-align: center;
+}
