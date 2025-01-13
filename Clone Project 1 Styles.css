@@ -1,59 +1,167 @@
+/* General Page Set Up */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: #f6f2fe;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
 }
-
-.main-nav li {
-  float: left;
-  width: 8em;
+.top-link {
   text-align: center;
-  border-right: 1px solid #fff;
-  background-color: black;
+  color: blueviolet;
+  align-items: center;
   display: block;
 }
 
-.main-nav a:link,
-.main-nav a:visited {
-  padding: 10px;
-  display: block;
-  text-decoration: none;
-  color: #fff;
-}
-.main-nav a:hover {
-  background-color: orange;
-}
-h1 {
-  text-decoration: none;
+/* Navigation */
+.nav {
+  display: flex;
   color: #885df1;
-  text-align: center;
-  display: block;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-h2 {
-  color: #272044;
-  font-weight: normal;
-  text-align: center;
-}
-h3 {
-  color: purple;
-  text-align: center;
+.nav a:hover {
+  color: red;
 }
 
-.splash {
-  background-image: url(https://img.baba-blog.com/2024/01/a-selection-of-clear-glass-perfume-bottles.jpeg?x-oss-process=style%2Ffull);
-  background-size: cover;
+/*Main Heading*/
+
+.heading {
   height: 70vh;
-  width: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: url(https://img.baba-blog.com/2024/01/a-selection-of-clear-glass-perfume-bottles.jpeg?x-oss-process=style/full)
+    no-repeat center center/cover;
 }
 
-.splash2 {
-  background-image: url(https://www.google.com/maps/place/Carrer+de+Mallorca,+214);
-  background-size: cover;
-  height: 70vh;
-  width: 100%;
-  display: block;
+.heading-content h1 {
+  font-size: 80px;
+  color: blueviolet;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
+.heading-content p {
+  font-size: 55px;
+  background-color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.heading-content .button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.heading-content .button:hover {
+  background-color: #fff;
+  color: #000;
+}
+/*Location Section*/
+
+.location h3 {
+  color: blueviolet;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Description*/
+p {
+  color: blueviolet;
+  text-align: center;
+}
+
+/*Gallery*/
+.gallery {
+  text-align: center;
+}
+
+h4 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: blueviolet;
+}
+
+gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  display: inline;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1;
+  display: inline;
+}
+.gallery-item img {
+  width: 30%;
+  height: 350px;
+  border: 2px solid #000;
+}
+
+/*Perfume Section*/
+h5 {
+  text-align: center;
+  color: blueviolet;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.perfume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.perfume-subsection h3 {
+  font-size: 25;
+  color: blueviolet;
+}
+
+.perfume-subsection p {
+  font-size: 15;
+  color: blueviolet;
+}
+.perfume-subsection img {
+  width: 300px;
+  height: 400px;
+  align-items: center;
+}
+
+/*Team section*/
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team-grid img {
+  display: inline-block;
+  width: 450px;
+  height: 500px;
+  border: 2px solid #000;
+  align-items: center;
+  flex: 1;
+}
+/*Footer Section*/
 .footer {
   text-decoration: none;
   color: #885df1;
